@@ -6,7 +6,7 @@ algoritmo campominado
 // Seção de Declarações 
 var
 mat: vetor[1..5,1..5] de inteiro
-posia: inteiro
+posi: inteiro
 posib: inteiro
 score: inteiro
 inicio
@@ -37,26 +37,26 @@ mat [5,4] := 1
 mat [5,5] := 2
 repita
 escreva("Digite o número da linha selecionada: ")
-leia(posia)
+leia(posi)
 
 escreva("Digite o número da coluna selecionada: ")
 leia(posib)
 
-se(mat[posia,posib] = 2) entao
-escreva("Você perdeu,encontrou uma bomba 😦 ")
+se(mat[posi,posib] = 2) entao
+escreva("Você perdeu,encontrou uma bomba ")
 fimse
 
-se(mat[posia,posib] = 1) entao
+se(mat[posi,posib] = 1) entao
 escreva("Espaço vago, digite novamente as cordenadas ")
 fimse
 
 se (score = 20) entao
-escreva("Você ganhou!!! pinas paga sua pizza 🙂  ")
+escreva("Você ganhou!!! pinas paga sua pizza  ")
 fimse
 
-se (mat[posia,posib] = 1) entao
+se (mat[posi,posib] = 1) entao
 score := score + 1
 fimse
-ate (mat[posia,posib] = 2)
+ate (mat[posi,posib] = 2)
 
 fimalgoritmo
