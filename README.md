@@ -1,7 +1,15 @@
-# Trabalho-LP---Atividade-Campo-Minado
+Duplas: Guilherme Roizentul e Henrique Vitor
+
+Descrição do jogo:
+O campo minado é um jogo simples, ao iniciar o jogo você deve clicar para abrir o primeiro campo,
+se no bloco no qual você clicou aparecer o número três, significa que existem três locais ao redor 
+desse bloco que você não pode clicar, o objetivo é você descobrir onde estão todas as bombas sem clicar nelas.
+
+Codigo em português estruturado 
+# Trabalho-LP-Atividade-Campo-Minado
 algoritmo campominado
 // Função :Jogo CampoMinado
-// Autor :
+// Autor : Guilherme Roizentul e Henrique Vitor
 // Data : 17/03/2023
 // Seção de Declarações 
 var
@@ -24,17 +32,18 @@ mat [3,1] := 1
 mat [3,2] := 1
 mat [3,3] := 1
 mat [3,4] := 1
-mat [3,5] := 1
+mat [3,5] := 2
 mat [4,1] := 1
 mat [4,2] := 1
 mat [4,3] := 2
 mat [4,4] := 1
 mat [4,5] := 1
 mat [5,1] := 1
-mat [5,2] := 1
+mat [5,2] := 2
 mat [5,3] := 1
 mat [5,4] := 1
-mat [5,5] := 2
+mat [5,5] := 1
+
 repita
 escreva("Digite o número da linha selecionada: ")
 leia(posi)
